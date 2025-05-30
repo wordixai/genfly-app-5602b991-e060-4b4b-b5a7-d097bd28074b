@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { BriefcaseIcon, BuildingIcon, HomeIcon, MenuIcon } from 'lucide-react';
+import { BriefcaseIcon, BuildingIcon, HomeIcon, MenuIcon, Leaf } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState } from 'react';
 
@@ -12,7 +12,7 @@ export function Navbar() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <Link to="/" className="flex items-center space-x-2">
-            <BriefcaseIcon className="h-6 w-6" />
+            <Leaf className="h-6 w-6 text-primary" />
             <span className="font-bold">JobBoard</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 ml-6">

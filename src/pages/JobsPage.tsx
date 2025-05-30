@@ -4,7 +4,7 @@ import { JobFilters } from '@/components/JobFilters';
 import { jobs } from '@/data/mockData';
 import { Job, JobType, LocationFilter } from '@/types';
 import { Separator } from '@/components/ui/separator';
-import { BriefcaseIcon } from 'lucide-react';
+import { BriefcaseIcon, Leaf } from 'lucide-react';
 
 export default function JobsPage() {
   const [filteredJobs, setFilteredJobs] = useState<Job[]>(jobs);
@@ -45,8 +45,12 @@ export default function JobsPage() {
   return (
     <div className="container py-8 md:py-12">
       <div className="flex flex-col gap-2 mb-8">
+        <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary w-fit">
+          <Leaf className="mr-1 h-3 w-3" />
+          Discover opportunities
+        </div>
         <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
-          <BriefcaseIcon className="h-6 w-6" />
+          <BriefcaseIcon className="h-6 w-6 text-primary" />
           Browse Jobs
         </h1>
         <p className="text-muted-foreground">

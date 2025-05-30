@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BriefcaseIcon, GithubIcon, TwitterIcon, LinkedinIcon } from 'lucide-react';
+import { Leaf, GithubIcon, TwitterIcon, LinkedinIcon } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
-              <BriefcaseIcon className="h-6 w-6" />
+              <Leaf className="h-6 w-6 text-primary" />
               <span className="font-bold">JobBoard</span>
             </div>
             <p className="text-sm text-muted-foreground">

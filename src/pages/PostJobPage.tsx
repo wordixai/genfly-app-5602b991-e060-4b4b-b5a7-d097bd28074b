@@ -5,7 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { getJobTypes } from '@/data/mockData';
-import { BriefcaseIcon } from 'lucide-react';
+import { BriefcaseIcon, Leaf } from 'lucide-react';
 
 export default function PostJobPage() {
   const jobTypes = getJobTypes();
@@ -19,8 +19,12 @@ export default function PostJobPage() {
   return (
     <div className="container py-8 md:py-12 max-w-3xl">
       <div className="flex flex-col gap-2 mb-8 text-center">
+        <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary mx-auto">
+          <Leaf className="mr-1 h-3 w-3" />
+          Employer portal
+        </div>
         <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2 justify-center">
-          <BriefcaseIcon className="h-6 w-6" />
+          <BriefcaseIcon className="h-6 w-6 text-primary" />
           Post a Job
         </h1>
         <p className="text-muted-foreground">

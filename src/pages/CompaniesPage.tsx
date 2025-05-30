@@ -4,7 +4,7 @@ import { companies, getJobsByCompany } from '@/data/mockData';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
-import { BuildingIcon, SearchIcon } from 'lucide-react';
+import { BuildingIcon, SearchIcon, Leaf } from 'lucide-react';
 
 export default function CompaniesPage() {
   const [search, setSearch] = useState('');
@@ -18,8 +18,12 @@ export default function CompaniesPage() {
   return (
     <div className="container py-8 md:py-12">
       <div className="flex flex-col gap-2 mb-8">
+        <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary w-fit">
+          <Leaf className="mr-1 h-3 w-3" />
+          Explore employers
+        </div>
         <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
-          <BuildingIcon className="h-6 w-6" />
+          <BuildingIcon className="h-6 w-6 text-primary" />
           Browse Companies
         </h1>
         <p className="text-muted-foreground">
